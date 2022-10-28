@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        Mascota::factory(10)->create();
+        //Mascota::factory(10)->create();
     }
 }
