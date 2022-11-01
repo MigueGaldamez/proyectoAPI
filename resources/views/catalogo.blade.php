@@ -35,7 +35,17 @@
               <div class="card-body">
                 <h5 class="card-title">Mascotas</h5>
                 <h6 class="card-subtitle mb-2 text-muted ">Tabla Catalogo</h6>
-                <a href="{{route('propietario.listar')}}" class="text-primary text-decoration-underline">ir</a>
+                <a href="{{route('mascota.listar')}}" class="text-primary text-decoration-underline">ir</a>
+               
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Veterinarios</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Tabla Catalogo</h6>
+                <a href="{{route('veterinario.listar')}}" class="text-primary text-decoration-underline">ir</a>
                
               </div>
             </div>

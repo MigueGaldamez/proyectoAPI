@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TipoTratamientoController;
 use App\Http\Controllers\PropietarioController;
 use App\Http\Controllers\EspecieController;
+use App\Http\Controllers\MascotaController;
+use App\Http\Controllers\VeterinarioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +50,16 @@ Route::post('/especie/crud/agregar', [EspecieController::class,'store'])->name('
 Route::get('/especie/crud/agregar', function () {
     return view('cruds.especie.agregar');
 })->name('especie.agregar');
+
+//Mascota
+Route::get('/mascota/crud', [MascotaController::class,'index'])->name('mascota.listar');;
+Route::post('/mascota/crud/agregar', [MascotaController::class,'store'])->name('mascota.guardar');
+Route::get('/mascota/crud/agregar', [MascotaController::class,'agregar'])->name('mascota.agregar');
+
+//Veterinario
+Route::get('/veterinario/crud', [VeterinarioController::class,'index'])->name('veterinario.listar');;
+Route::post('/veterinario/crud/agregar', [VeterinarioController::class,'store'])->name('veterinario.guardar');
+Route::get('/veterinario/crud/agregar', [VeterinarioController::class,'agregar'])->name('veterinario.agregar');
 
 //Padecimiento
 Route::get('/padecimiento/crud', [TipoTratamientoController::class,'index'])->name('padecimiento.listar');;

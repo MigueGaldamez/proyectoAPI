@@ -12,4 +12,13 @@ class Mascota extends Model
     protected $fillable = [
         'nombre'
     ];
+    public function propietario()
+    {
+        return $this->belongsTo(Propietario::class,'id_propietario');
+    }
+
+    public function especie()
+    {
+        return $this->belongsTo(Especie::class,'id_especie');
+    }
 }

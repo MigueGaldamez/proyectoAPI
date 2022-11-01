@@ -18,11 +18,35 @@
                         <div class="row mt-4">
                             <div class="col col-6 mt-3">
                                 <div class="mb-3">
-                                    <label for="especie" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control rounded" id="especie" name="especie" aria-describedby="emailHelp">
+                                    <label for="nombre_propietario" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control rounded" id="nombre_propietario" name="nombre_propietario" aria-describedby="emailHelp">
                                  </div>
                             </div>
-                          
+                            <div class="col col-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="apellido_propietario" class="form-label">Apellido:</label>
+                                    <input type="text" class="form-control rounded" id="apellido_propietario" name="apellido_propietario" aria-describedby="emailHelp">
+                                 </div>
+                            </div>
+                            <div class="col col-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="telefono_propietario" class="form-label">Telefono:</label>
+                                    <input type="text" class="form-control rounded" id="telefono_propietario" name="telefono_propietario" aria-describedby="emailHelp">
+                                 </div>
+                            </div>
+                           
+                            <div class="col col-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="correo_propietario" class="form-label">Correo:</label>
+                                    <input type="text" class="form-control rounded" id="correo_propietario" name="correo_propietario" aria-describedby="emailHelp">
+                                 </div>
+                            </div>
+                            <div class="col col-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="direccion_propietario" class="form-label">Dirección:</label>
+                                    <textarea type="text" class="form-control rounded" id="direccion_propietario" name="direccion_propietario" aria-describedby="emailHelp"></textarea>
+                                 </div>
+                            </div>
                         </div>
                         <div class="col mt-2">
                             <button class="btn btn-sm btn-primary">Guardar</button>
